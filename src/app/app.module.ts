@@ -13,6 +13,8 @@ import { ChoosePaymentModule } from './choose-payment/choose-payment.module';
 import { ByeModule } from './bye/bye.module';
 import { WaitingModule } from './waiting/waiting.module';
 import { WaitingComponent } from './waiting/waiting.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { WelcomeModule } from './welcome/welcome.module';
 
 const firebase = {
   piKey: "AIzaSyA19HmgnAyzvMlFnMkuOq-7AbpIsi5LLdA",
@@ -28,6 +30,7 @@ const appRoutes: Routes = [
   { path: 'checkout', component: ChoosePaymentComponent },
   { path: 'bye', component: ByeComponent },
   { path: 'waiting', component: WaitingComponent },
+  { path: 'welcome', component: WelcomeComponent },
   { path: '',
     redirectTo: '/idle',
     pathMatch: 'full'
@@ -46,6 +49,7 @@ const appRoutes: Routes = [
     ChoosePaymentModule,
     ByeModule,
     WaitingModule,
+    WelcomeModule,
     RouterModule.forRoot(
       appRoutes
     )
