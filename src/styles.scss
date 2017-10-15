@@ -1,5 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
-
+@font-face{
+	font-family: robotoRegular;
+    src: url("./assets/Roboto/Roboto-Regular.ttf");
+}
+@font-face{
+	font-family: robotoLight;
+    src: url("./assets/Roboto/Roboto-Light.ttf");
+}
 body {
-  font-family: Lato;
+  font-family: robotoRegular;
 }
